@@ -32,6 +32,7 @@ names(qc)
 qc_plot(qc, "summary")
 qc_plot(qc, "Basic statistics")
 qc_plot(qc, "Per base sequence quality")
+qc_plot(qc, "Per base sequence content")
 qc_plot(qc, "Per sequence GC content")
 qc_plot(qc, "Per sequence quality scores")
 qc_plot(qc, "Sequence duplication levels")
@@ -52,6 +53,9 @@ qc_plot(qc, "Kmer content")
 
 # qc_plot(qc, "Per base sequence quality")
 ![Screenshot from 2022-04-06 15-24-59](https://user-images.githubusercontent.com/93121277/161985072-8cedc4a9-736b-47c4-83cd-136c29988dd5.png)
+
+# qc_plot(qc, "Per base sequence content")
+![Screenshot from 2022-04-06 15-36-10](https://user-images.githubusercontent.com/93121277/161987332-54da0fa7-557c-48e9-9bb8-13501ece3819.png)
 
 # qc_plot(qc, "Per sequence GC content")
 ![Screenshot from 2022-04-06 15-25-41](https://user-images.githubusercontent.com/93121277/161985197-c598e482-db5e-4e89-841f-fcc15a8eb6b2.png)
