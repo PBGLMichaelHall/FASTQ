@@ -12,6 +12,8 @@ apt install sra-toolkit
 ![Screenshot from 2022-04-06 14-35-19](https://user-images.githubusercontent.com/93121277/161975754-a416bbfd-f93c-4358-9e8a-8579fd219cb1.png)
 # It matches linux command line standard output:
 ![Screenshot from 2022-04-06 14-29-10](https://user-images.githubusercontent.com/93121277/161975870-38ced2e9-e793-4172-b852-cf439c5aab84.png)
+# The Data Tree after G Zipping the FASTA File
+![Screenshot from 2022-04-06 15-45-59](https://user-images.githubusercontent.com/93121277/161989384-e8f4563f-1095-4123-9898-1c9ae697ac2b.png)
 
 # The Following R Package "fastqcr" can analyze a FASTQ sample like this one or multiple FASTQ files
 
@@ -21,13 +23,25 @@ install.packages("fastqcr")
 library(fastqcr)
 fastqc_install()
 fastqc(fq.dir = "/home/michael/Desktop/SRA/FASTQ",threads = 4)
+```
+![Screenshot from 2022-04-06 15-53-21](https://user-images.githubusercontent.com/93121277/161990870-b05f4e34-46cf-4fd7-a139-c25ab08e663c.png)
 
+
+# THe new Data Tree
+![Screenshot from 2022-04-06 15-54-27](https://user-images.githubusercontent.com/93121277/161991088-70d122b5-54f2-4431-942a-1a3763e02d91.png)
+
+```r
 # Generating fastqc file automatically makes a FASTQC directory
 qc.file <- "/home/michael/Desktop/SRA/FASTQ/FASTQC/SRR2121685_fastqc.zip"
 #Read fastqc file
 qc <- qc_read(qc.file)
 #Produce Names
 names(qc)
+```
+![Screenshot from 2022-04-06 15-53-51](https://user-images.githubusercontent.com/93121277/161990962-be465975-66e7-43d5-ae42-71317c898a06.png)
+
+
+```r
 #Plotting
 qc_plot(qc, "summary")
 qc_plot(qc, "Basic statistics")
