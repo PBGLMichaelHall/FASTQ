@@ -99,7 +99,7 @@ qc_plot(qc, "Kmer content")
 # ERROR
 
 
-# If we want to convert a FASTQ file to a FAST file then the following command should be adequate
+# If we want to convert a FASTQ file to a FASTA file then the following command should be adequate
 ![Screenshot from 2022-04-07 09-15-06](https://user-images.githubusercontent.com/93121277/162141651-874b6a70-49c7-4574-92e9-4bf28715574d.png)
 
 
